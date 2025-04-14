@@ -1,6 +1,9 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+  "HomePage": {
+    "News": {
+      "title": "Latest Updates and News",
+      "subtitle": "Don’t miss updated news , follow us!",
+      "button": "See News All"
     }
   }
+}
