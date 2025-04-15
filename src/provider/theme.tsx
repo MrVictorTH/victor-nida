@@ -85,6 +85,25 @@ const theme = createTheme({
               },
             },
         }
+    },
+    components : {
+      MuiAppBar: {
+        defaultProps: {
+          elevation: 1,
+        },
+        styleOverrides: {
+          root: ({ theme }) => ({
+            borderRadius: '1.25rem',
+            background: `${theme.vars.palette.background.default} !important`,
+            color: `${theme.vars.palette.primary.main} !important`,
+            position: 'fixed',
+            width: '80%',
+            top: 30,
+            left: '50%',
+            transform: 'translateX(-50%)',
+          }),
+        },
+      }
     }
 });
 
@@ -92,7 +111,7 @@ export default function ThemeProvider({
     children,
   }: Readonly<{ children: React.ReactNode }>) {
     const [mounted, setMounted] = useState(false);
-    // เราจะ Set MUI มันทำงานฝั่ง Client เลย ให้มันทำงาน ThemeProvider(แต่ As MuiThemeProvider เพราะเดี๋ยวชื่อซ้ำ) ตอน Mount
+    // เราจะ Set MUI มันทำงานฝั่ง Client เลย ให้มันทำงาน ThemeProvider(แต่ใช้ชื่อ As MuiThemeProvider เพราะเดี๋ยวชื่อซ้ำ) ตอน Mount
     useEffect(() => {
       setMounted(true);
     }, []);
