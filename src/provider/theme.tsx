@@ -103,6 +103,20 @@ const theme = createTheme({
             transform: 'translateX(-50%)',
           }),
         },
+      },
+      MuiButton: {
+        defaultProps: {
+          disableElevation: true,
+          loadingPosition: 'start',
+        },
+        styleOverrides: {
+          root: {
+            borderRadius: '0.75rem',
+            lineHeight: '2rem',
+            textTransform: 'none',
+            height: '2.5rem',
+          },
+        },
       }
     }
 });
