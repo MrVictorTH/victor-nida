@@ -1,4 +1,13 @@
 {
+  "AppBar": {
+    "Menu": {
+      "home": "Home",
+      "exploreCourses": "Explore Courses",
+      "forum": "Forum",
+      "news": "News",
+      "faq": "FAQ"
+    }
+  },
   "Homepage": {
     "News": {
       "title": "Latest Updates and News",
