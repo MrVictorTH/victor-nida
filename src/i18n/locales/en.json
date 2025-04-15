@@ -8,6 +8,17 @@
       "faq": "FAQ"
     }
   },
+  "Footer": {
+    "a" : {
+      "webInfo1": "E-learning Website publish by NIDA",
+      "webInfo2": "Environment School | The National",
+      "webInfo3": "Institute of Development Administration",
+      "contact": "Contact",
+      "email": "Email:",
+      "phone": "Phone:",
+      "download": "Download"
+    }
+  },
   "Homepage": {
     "News": {
       "title": "Latest Updates and News",

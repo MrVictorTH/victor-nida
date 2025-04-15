@@ -2,6 +2,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import CustomAppBar from '@/components/layout/app-bar'
+import Footer from '@/components/layout/footer'
  
 export default async function LocaleLayout({
   children,
@@ -21,7 +22,8 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           <CustomAppBar />
-          {children}
+            {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
