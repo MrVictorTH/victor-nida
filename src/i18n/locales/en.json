@@ -1,5 +1,13 @@
 {
   "AppBar": {
+    "Action": {
+      "register": "Register",
+      "login": "Login"
+    },
+    "Locales": {
+      "en": "English",
+      "th": "ภาษาไทย"
+    },
     "Menu": {
       "home": "Home",
       "exploreCourses": "Explore Courses",

@@ -1,5 +1,13 @@
 {
   "AppBar": {
+    "Action": {
+      "register": "ลงทะเบียน",
+      "login": "เข้าสู่ระบบ"
+    },
+    "Locales": {
+      "en": "English",
+      "th": "ภาษาไทย"
+    },
     "Menu": {
       "home": "หน้าแรก",
       "exploreCourses": "วิชาเรียน",
