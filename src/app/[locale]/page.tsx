@@ -1,10 +1,12 @@
 import dynamic from 'next/dynamic';
 import { fetchHome } from '@/service/homepage'
 import React from 'react';
+import { DynamicFeedOutlined } from '@mui/icons-material';
 
 const MainComponent = dynamic(() => import('@/components/homepage/main'));
 const NewsComponent = dynamic(() => import('@/components/homepage/news'));
 const FreeRegistrationComponent = dynamic(() => import('@/components/homepage/registration'));
+const RecommendCourseComponent = dynamic(() => import('@/components/homepage/recommend-course'));
 
 const HomePage = async () => {
     const homeDataList = await fetchHome();
@@ -17,6 +19,7 @@ const HomePage = async () => {
                 <NewsComponent newsList={homeDataList.news} />
                 <FreeRegistrationComponent />
             </div>
+            <RecommendCourseComponent courses={homeDataList.course} />
         </>
 
     ) 

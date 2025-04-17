@@ -40,6 +40,10 @@
       "title": "Free Registration",
       "description": "Online Lesson, news, forums are available",
       "button": "Register"
+    },
+    "Recommend": {
+      "title": "Recommended Courses",
+      "button": "Explore Course"
     }
   }
 }

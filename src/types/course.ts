@@ -1,39 +1,10 @@
-//#region news
-interface ObjIdAndName {
-    id: number;
-    name: string;
-}
-
-export interface News {
-    allAccess: boolean;
-    attachType: ObjIdAndName;
-    canShare: boolean;
-    comments: number;
-    description: string;
-    duration: string;
-    id: number;
-    imageUrl: string;
-    isLiked: boolean;
-    likes: number;
-    positions: unknown[];
-    publishDate: string;
-    title: string;
-    topicType: ObjIdAndName;
-    total: number;
-    updateDate: string;
-    updateTime: string;
-    views: number;
-}
-//#endregion
-
-//#region course
-export interface Course {
+export interface CourseData {
     allAccess: boolean;
     avgRating: number;
-    category: ObjIdAndName;
+    category: Category;
     chapterTotal: number;
     code: string;
-    continue: ContinueInfo;
+    continue: ContinueProgress;
     courseImageUrl: string;
     coursePrerequisite: string;
     id: number;
@@ -52,18 +23,24 @@ export interface Course {
     registerEndDate: string;
     registerStartDate: string;
     reviewCount: number;
+    supportTrainers?: Trainer[];
     trainer: Trainer;
-}
-
-interface ContinueInfo {
+  }
+  
+  export interface Category {
+    id: number;
+    name: string;
+  }
+  
+  export interface ContinueProgress {
     chapterId: number;
     courseId: number;
     subType: string;
     targetId: number;
     type: string;
-}
-
-interface Trainer {
+  }
+  
+  export interface Trainer {
     bio: string;
     career: string;
     experience: string;
@@ -74,11 +51,4 @@ interface Trainer {
     nickname: string;
     profileImageUrl: string;
     title: string;
-}
-//#endregion
-
-
-export interface HomeResponseObject {
-    news: News[];
-    course: Course[];
-}
+  }
