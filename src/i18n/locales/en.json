@@ -30,6 +30,11 @@
       "title": "Latest Updates and News",
       "subtitle": "Don’t miss updated news , follow us!",
       "button": "See News All"
+    },
+    "Registration": {
+      "title": "Free Registration",
+      "description": "Online Lesson, news, forums are available",
+      "button": "Register"
     }
   }
 }

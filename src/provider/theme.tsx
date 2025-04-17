@@ -117,6 +117,53 @@ const theme = createTheme({
             height: '2.5rem',
           },
         },
+      },
+      MuiTypography: {
+        styleOverrides: {
+          root: {
+            whiteSpace: 'pre-line',
+          },
+        },
+      },
+      MuiChip: {
+        styleOverrides: {
+          root: {
+            borderRadius: '0.75rem',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          },
+        },
+      },
+      MuiCssBaseline: {
+        defaultProps: {
+          enableColorScheme: true,
+        },
+        styleOverrides: (theme) => ({
+          ':root': {
+            '--primary-main': theme.palette.primary.main,
+            '--primary-contrastText': theme.palette.primary.contrastText,
+            '--secondary-main': theme.palette.secondary.main,
+            '--secondary-contrastText': theme.palette.secondary.contrastText,
+            '--success-main': theme.palette.success.main,
+            '--success-contrastText': theme.palette.success.contrastText,
+            '--info-main': theme.palette.info.main,
+            '--info-contrastText': theme.palette.info.contrastText,
+            '--warning-main': theme.palette.warning.main,
+            '--warning-contrastText': theme.palette.warning.contrastText,
+            '--error-main': theme.palette.error.main,
+            '--error-contrastText': theme.palette.error.contrastText,
+            '--text-primary': theme.palette.text.primary,
+            '--text-secondary': theme.palette.text.secondary,
+            '--text-disabled': theme.palette.text.disabled,
+            '--background-default': theme.palette.background.default,
+            '--background-paper': theme.palette.background.paper,
+          },
+          'input:-webkit-autofill': {
+            WebkitBoxShadow: `0 0 0 30px ${theme.vars.palette.background.default} inset !important`,
+          },
+          'input::-ms-clear, input::-ms-reveal': {
+            display: 'none',
+          },
+        }),
       }
     }
 });
