@@ -46,7 +46,11 @@ const CourseCard: React.FC<CourseProps> = ({ data }) => {
           </div>
           <CardContent className="flex h-[200px] flex-col justify-between">
             <div className="flex flex-col gap-2">
-              <Typography className="line-clamp-2 overflow-hidden" variant="subtitle1" fontWeight={'bold'}>
+              <Typography className="line-clamp-2 overflow-hidden" variant="subtitle1" fontWeight={'bold'}
+               sx={{
+                minHeight: `calc(1.5rem * 2)`, // Approx. 2 lines of text (assuming line-height ~1.5rem)
+                lineHeight: '1.5rem',
+              }}>
                 {data.name}
               </Typography>
               <div className="flex flex-row items-center gap-2">
