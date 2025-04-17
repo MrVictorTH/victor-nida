@@ -123,6 +123,23 @@ const theme = createTheme({
           },
         }),
       }
+    },
+    typography: {
+      fontWeightBold: 700,
+      fontWeightMedium: 500,
+      fontWeightRegular: 400,
+      fontWeightLight: 300,
+      h1: { fontSize: '6rem' },
+      h2: { fontSize: '3.75rem' },
+      h3: { fontSize: '2.75rem' },
+      h4: { fontSize: '2rem' },
+      h5: { fontSize: '1.5rem' },
+      h6: { fontSize: '1.25rem' },
+      subtitle1: { fontSize: '1rem' },
+      subtitle2: { fontSize: '0.875rem' },
+      body1: { fontSize: '0.75rem' },
+      body2: { fontSize: '0.625rem' },
+      caption: { fontSize: '0.625rem' },
     }
 });
 
