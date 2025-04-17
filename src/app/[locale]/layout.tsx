@@ -24,7 +24,7 @@ export default async function LocaleLayout({
         <Providers>
           <NextIntlClientProvider>
             <CustomAppBar />
-            {children}
+            <div className="px-16">{children}</div>
             <Footer />
           </NextIntlClientProvider>
         </Providers>
