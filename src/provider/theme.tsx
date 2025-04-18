@@ -91,6 +91,17 @@ const theme = createTheme({
           },
         },
       },
+      MuiInputBase: {
+        styleOverrides: {
+          root: ({ theme }) => ({
+            background: theme.palette.background.default,
+            borderRadius: '1rem !important',
+            fontSize: theme.typography.subtitle2.fontSize,
+            fontWeight: theme.typography.fontWeightRegular,
+            height: '2.75rem',
+          }),
+        },
+      },
       MuiCssBaseline: {
         defaultProps: {
           enableColorScheme: true,
