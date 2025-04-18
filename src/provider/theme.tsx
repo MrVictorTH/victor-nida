@@ -1,6 +1,6 @@
 "use client";
 
-import { createTheme } from "@mui/material";
+import { createTheme, Palette ,PaletteColor } from "@mui/material";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -88,6 +88,18 @@ const theme = createTheme({
           root: {
             borderRadius: '0.75rem',
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          },
+          filled: ({ ownerState, theme }) => {
+            const color = ownerState.color || 'primary';
+            const paletteColor = theme.palette[color as keyof Palette] as PaletteColor;
+  
+            return paletteColor?.main
+              ? {
+                  backgroundColor: paletteColor.main,
+                  color: paletteColor.contrastText,
+                  borderColor: paletteColor.main,
+                }
+              : {};
           },
         },
       },
