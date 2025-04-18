@@ -51,8 +51,8 @@ export default function CustomAppBar() {
                   {t('Menu.home')}
                 </Typography>
               </Link>
-              <Link href="/explore">
-                <Typography variant="body1" fontWeight="bold" color={color('explore')}>
+              <Link href="/explore-course">
+                <Typography variant="body1" fontWeight="bold" color={color('explore-course')}>
                   {t('Menu.exploreCourses')}
                 </Typography>
               </Link>
