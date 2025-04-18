@@ -102,6 +102,11 @@ const theme = createTheme({
           }),
         },
       },
+      MuiLink: {
+        defaultProps: {
+          underline: 'none'
+        },
+      },
       MuiCssBaseline: {
         defaultProps: {
           enableColorScheme: true,
